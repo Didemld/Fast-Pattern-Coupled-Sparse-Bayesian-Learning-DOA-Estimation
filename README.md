@@ -18,7 +18,7 @@ This project implements **Pattern-Coupled Sparse Bayesian Learning (PCSBL)** and
 Five algorithms are benchmarked:
 - **EM-SBL** – Expectation–Maximization Sparse Bayesian Learning  
 - **EM-PCSBL** – Pattern-Coupled SBL with EM updates  
-- **EM-CSBL** – Correlated SBL (baseline variant)  
+- **EM-CSBL** – Clustered SBL (baseline variant)  
 - **FP-SBL** – Fixed-Point SBL (non-coupled)  
 - **FP-PCSBL** – *Proposed Algorithm*: Pattern-Coupled SBL using **fixed-point iterations**
 
