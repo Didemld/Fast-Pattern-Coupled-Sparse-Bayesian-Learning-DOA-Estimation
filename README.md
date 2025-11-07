@@ -31,7 +31,7 @@ The **FP-PCSBL** method achieves similar accuracy to EM-based PCSBL but with **s
 | Category | Files | Description |
 |-----------|-------|-------------|
 | **Main experiments** | `NMSE_Asilomar.m`, `NMSE_Asilomar_snapshot.m`, `NMSE_asilomarK.m`, `NMSE_asilomar_SNR.m` | Generate NMSE plots under different experimental conditions (m/n, snapshots, K, SNR). |
-| **Core solvers** | `SBL.m`, `SBL_PC.m`, `MPCSBL.m`, `MPCSBL_alternative.m` | Implement FP SBL, FP PCSBL, EM SBL, EM PCSBL, and EM CSBL
+| **Core solvers** | `SBL.m` (Implement FP SBL), `SBL_PC.m` (FP PCSBL), `MPCSBL.m` (EM SBL, EM PCSBL), `MPCSBL_alternative.m` (EM CSBL)| 
 | **Helpers & utilities** |`SBLSet.m`| Support functions for structure setup and hyperparameter updates. |
 
 ---
@@ -51,7 +51,7 @@ Each simulation follows these steps:
 
 | Script | Variable Swept | Plot |
 |---------|----------------|------|
-| `NMSE_Asilomar.m` | **N/L ratio** | NMSE vs. number of sensors |
+| `NMSE_Asilomar.m` | **N/L ratio** | NMSE vs. number of sensors (N) |
 | `NMSE_Asilomar_snapshot.m` | **Snapshots (M)** | NMSE vs. number of snapshots |
 | `NMSE_asilomarK.m` | **K (sparsity level)** | NMSE vs. K |
 | `NMSE_asilomar_SNR.m` | **SNR (dB)** | NMSE vs. SNR |
